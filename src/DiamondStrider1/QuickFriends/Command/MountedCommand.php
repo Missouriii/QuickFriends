@@ -75,8 +75,8 @@ class MountedCommand extends Command implements PluginOwned
     private function promptPlayer(Player $sender, string $label, array $args): void
     {
         $form = MenuForm::create()
-            ->title("Running /{$label}")
-            ->content("§cThat subcommand does not exist!\n\n§rTry one of these, instead.");
+            ->title("§l§aFRIEND MENU")
+            ->content("§7Select a button below.");
 
         $indexToNameMap = [];
         foreach (array_keys($this->overloadMap) as $name) {
