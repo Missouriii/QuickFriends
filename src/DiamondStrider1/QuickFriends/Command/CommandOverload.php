@@ -134,8 +134,8 @@ class CommandOverload extends Command
     {
         $error = $e->getMessage();
         CustomForm::create()
-            ->title("Running \"/{$label}\"")
-            ->label('§c'.$e->getMessage())
+            ->title("§l§8» §aFriends Menu §8«")
+            ->label('§e'.$e->getMessage())
             ->input('Fill in missing arguments here.')
             ->sendPromise($sender)
             ->onCompletion(function ($response) use ($sender, $label, $validParams, $remainingParams, $error) {
