@@ -57,11 +57,11 @@ class CommandArgs
         if (0 !== strlen($begin)) {
             $newMessage .= "{$begin} ";
         }
-        $newMessage .= '§l>>>§r§c ';
+        $newMessage .= ' §l»§r§c ';
         if (0 !== strlen($middle)) {
             $newMessage .= "{$middle} ";
         }
-        $newMessage .= '§l<<<§r§c';
+        $newMessage .= ' §l«§r§c ';
         if (0 !== strlen($end)) {
             $newMessage .= " {$end}";
         }
